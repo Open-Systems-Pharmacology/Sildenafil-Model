@@ -1,0 +1,292 @@
+{
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.1/OSP_Qualification_Plan_Schema.json",
+    "Projects": [
+        {
+            "Id": "Sildenafil",
+            "Path": "../../Sildenafil-Model.json",
+            "BuildingBlocks": [],
+            "SimulationParameters": []
+        }
+    ],
+    "ObservedDataSets": [],
+    "Plots": {
+        "AxesSettings": {
+            "GOFMergedPlotsPredictedVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "GOFMergedPlotsResidualsOverTime": [
+                {
+                    "Type": "X",
+                    "Dimension": "Time",
+                    "Unit": "h",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                }
+            ],
+            "ComparisonTimeProfile": [
+                {
+                    "Type": "X",
+                    "Dimension": "Time",
+                    "Unit": "h",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Concentration (mass)",
+                    "Unit": "ng/ml",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsPredictedVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsResidualsVsObserved": [
+                {
+                    "Type": "X",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "PKRatioPlots": [
+                {
+                    "Type": "X",
+                    "Dimension": "Age",
+                    "Unit": "year(s)",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Type": "Y",
+                    "Dimension": "Dimensionless",
+                    "Unit": "",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ]
+        },
+        "PlotSettings": {
+            "ChartWidth": 500,
+            "ChartHeight": 400,
+            "Fonts": {
+                "AxisSize": 11,
+                "LegendSize": 9,
+                "OriginSize": 9,
+                "FontFamilyName": "Arial",
+                "WatermarkSize": 40
+            }
+        },
+        "AllPlots": [],
+        "GOFMergedPlots": [],
+        "ComparisonTimeProfilePlots": [
+            {
+                "SectionId": 1,
+                "Title": "Hedaya 2006, Clarithromycin-Sildenafil",
+                "SimulationDuration": 24,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Hedaya_Clari_control",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Hedaya 2006 - Clarythromycin DDI, control group - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                        "StartTime": 0,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Clarithromycin)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Hedaya_Clari_treatment",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Hedaya 2006 - Clarithromycin DDI, treatment group - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                        "StartTime": 2,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment with Clarithromycin",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionId": 1,
+                "Title": "Hesse 2005, Fluvoxamine-Sildenafil",
+                "SimulationDuration": 24,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Hesse_Fluvo_control",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Hesse 2005 - Fluvoxamine DDI, control group - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                        "StartTime": 0,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Fluvoxamine)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Hesse_Fluvo_treatment",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Hesse 2005 - Fluvoxamine DDI, treatment group - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                        "StartTime": 240,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment with Fluvoxamine",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionId": 1,
+                "Title": "Lee 2021, Clarithromycin-Sildenafil",
+                "SimulationDuration": 24,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Lee_Clari_control",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Lee 2021 - Clarithromycin DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=15)",
+                        "StartTime": 0,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Clarithromycin)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Lee_Clari_treatment",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Lee 2021 - Clarithromycin DDI, treatment group - Sildenafil - PO - 25 mg - Plasma - agg. (n=15)",
+                        "StartTime": 96,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment with Clarithromycin",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionId": 1,
+                "Title": "Lee 2021, Itraconazole-Sildenafil",
+                "SimulationDuration": 24,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Lee_Itra_control",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Lee 2021 - Itraconazole DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=16)",
+                        "StartTime": 0,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Itraconazole)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Lee_Itra_treatment",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Lee 2021 - Itraconazole DDI, treatment group - Sildenafil - PO - 25 mg - Plasma - agg. (n=16)",
+                        "StartTime": 96,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment with Itraconazole",
+                        "Symbol": "Square"
+                    }
+                ]
+            },
+            {
+                "SectionId": 1,
+                "Title": "Muirhead 2002, Erythromycin-Sildenafil",
+                "SimulationDuration": 24,
+                "TimeUnit": "h",
+                "OutputMappings": [
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Muirhead_Ery_control",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Muirhead 2002a - Erythromycin DDI, control group, D1 - Sildenafil - PO - 100 mg - Plasma - agg. (n=13)",
+                        "StartTime": 0,
+                        "TimeUnit": "h",
+                        "Color": "#2166ac",
+                        "Caption": "Control (without Erythromycin)",
+                        "Symbol": "Circle"
+                    },
+                    {
+                        "Project": "Sildenafil",
+                        "Simulation": "DDI_Muirhead_Ery_treatment",
+                        "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+                        "ObservedData": "Muirhead 2002a - Erythromycin DDI, treatment group, D6 - Sildenafil - PO - 100 mg - Plasma - agg. (n=13)",
+                        "StartTime": 121,
+                        "TimeUnit": "h",
+                        "Color": "#b2182b",
+                        "Caption": "Treatment with Erythromycin",
+                        "Symbol": "Square"
+                    }
+                ]
+            }
+        ],
+        "DDIRatioPlots": [],
+        "PKRatioPlots": []
+    },
+    "Inputs": [],
+    "Sections": [
+        {
+            "Id": 1,
+            "Title": "Plots",
+            "Content": "Content/empty.md"
+        }
+    ],
+    "Intro": [
+        {
+            "Path": "Content/titlepage.md"
+        }
+    ]
+}
