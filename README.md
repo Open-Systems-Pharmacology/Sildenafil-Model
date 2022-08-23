@@ -1,8 +1,7 @@
 # Sildenafil-Model
 Whole-body PBPK model of sildenafil.
 
-<a title="Sildenafil" href="//commons.wikimedia.org/w/index.php?title=File:Sildenafil.svg&amp;lang=fr&amp;uselang=fr"><img width="250" alt="Image illustrative de l’article Sildénafil" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sildenafil.svg/langfr-250px-Sildenafil.svg.png"></a>
-
+<a title="Sildenafil" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sildenafil.svg/320px-Sildenafil.svg.png"><img width="128" alt="Sildenafil 200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sildenafil.svg/320px-Sildenafil.svg.png"></a>
 
 
 This repository contains:
