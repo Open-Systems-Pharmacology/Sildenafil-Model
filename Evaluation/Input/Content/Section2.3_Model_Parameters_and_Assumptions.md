@@ -2,7 +2,7 @@
 
 The model parameter `Specific intestinal permeability` was optimized to best match clinical data (see  [Section 2.3.4](#234-automated-parameter-identification)). A formulation without limitation to absorption was assumed for the oral solution, therefore its solubility was set to 100 mg/L. A default solubility of 3.5 mg/L was taken from the model of [Salerno 2021](#5-references) and used for tablets (see [Section 2.2.1](#221-in-vitro-and-physicochemical-data))
 
-The dissolution of tablets was implemented via a Weibull dissolution tablet. The Weibull function was fitted using R 4.2.1 based on in vitro data ([Sawatdee 2019](5#-references)), and the resulting dissolution kinetic parameters were fixed in the model.
+The dissolution of tablets was implemented via a Weibull dissolution tablet. The Weibull function was fitted using R 4.2.1 based on in vitro data ([Sawatdee 2019](#5-references)), and the resulting dissolution kinetic parameters were fixed in the model.
 
 
 ### 2.3.2 Distribution

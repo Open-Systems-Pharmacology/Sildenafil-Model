@@ -7,7 +7,7 @@ First, a mean model was built using clinical data from single dose studies with 
 
 A specific selected set of parameters (see below) was optimized using the Parameter Identification module provided in PK-Sim®. Structural model selection was mainly guided by visual inspection of the resulting description of data and biological plausibility.
 
-Once the appropriate structural model was identified, a Weibull function was fitted using R 4.2.1 based on in vitro data ([Sawatdee 2019](5#-references)), and the resulting dissolution kinetic parameters were implemented in the model.
+Once the appropriate structural model was identified, a Weibull function was fitted using R 4.2.1 based on in vitro data ([Sawatdee 2019](#5-references)), and the resulting dissolution kinetic parameters were implemented in the model.
 
 The model was then evaluated by simulating further clinical studies reporting pharmacokinetic concentration-time profiles of sildenafil.
 
