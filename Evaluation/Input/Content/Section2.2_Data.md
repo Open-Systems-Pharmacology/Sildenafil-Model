@@ -51,11 +51,11 @@ The following publications were found in adults for model building:
 | [FDA 2009](#5-references) | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil:<br />- 20 mg intravenous infusion <br />- 40 mg intravenous infusion <br />- 80 mg intravenous infusion|
 | [Walker 1999](#5-references)           | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 50 mg oral solution                                          |
 | [Spence 2008](#5-references)           | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 20 mg tablet                                                 |
-| [Lee 2021](#5-references)              | Plasma PK profiles in healthy subjects with single dose administrations of a sildenfail:<br />- 25 mg tablet (in the absence of itraconazole)<br />- 25 mg tablet (in the absence of clarithromycin)|
+| [Lee 2021](#5-references)              | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil:<br />- 25 mg tablet (in the absence of itraconazole)<br />- 25 mg tablet (in the absence of clarithromycin)|
 | [Abdelkawy 2016](#5-references)        | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 50 mg tablet                                                 |
 | [Gillen 2017](#5-references)           | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 50 mg tablet (Panel 1)                                       |
 | [Jetter 2002](#5-references)           | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 50 mg tablet                                                 |
-| [Murthada 2021](#5-references)         | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 50 mg tablet (non-smoker group)                              |
+| [Murtadha 2021](#5-references)         | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 50 mg tablet (non-smoker group)                              |
 | [Wilner 2002](#5-references)           | Plasma PK profiles in healthy subjects with single dose administrations of a sildenafil 50 mg tablet (study I)                                       |
 
 
