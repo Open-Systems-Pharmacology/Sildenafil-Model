@@ -51,12 +51,11 @@ This is the result of the final parameter identification for the base model:
 | ------------------------------------------------------------ | ------------------------------------------------------------ | --------- |
 | `Lipophilicity`                                              | 2.84                                                         | Log Units |
 | `Fraction unbound`                                           | 0.04 (FIXED)                                                 |           |
-| `Organ permeability`                                         | 0.08                                                         | cm/min    |
-| `Specific intestinal permeability`                           | 4.48E-4                                                      | cm/min    |
-| Basolateral mucosa permeability<br />(``P (interstitial->intracellular)``, ``P (intracellular->interstitial)``) | 1.78E-3   | cm/min    |
-| `kcat` (CYP3A4)                                              | 29.81                                                        | 1/min     |
-| `kcat` (CYP2C9)                                              | 3.52                                                         | 1/min     |
-| `kcat` (CYP2C19)                                             | 1.78                                                         | 1/min     |
+| `Specific intestinal permeability`                           | 1.21E-3                                                      | cm/min    |
+| Basolateral mucosa permeability<br />(``P (interstitial->intracellular)``, ``P (intracellular->interstitial)``) | 6.07E-4   | cm/min    |
+| `kcat` (CYP3A4)                                              | 27.21                                                        | 1/min     |
+| `kcat` (CYP2C9)                                              | 3.22                                                         | 1/min     |
+| `kcat` (CYP2C19)                                             | 1.62                                                         | 1/min     |
 | `Dissolution time`                                           | 4.16 (FIXED)                                                 | min       |
 | `Dissolution shape`                                          | 1.37 (FIXED)                                                 |           |
 
