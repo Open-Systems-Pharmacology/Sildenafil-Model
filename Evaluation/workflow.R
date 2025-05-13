@@ -150,7 +150,7 @@ createQualificationReport <- function(qualificationRunnerFolder,
   
   workflow$plotPKRatio$settings$units$C_max <- "ng/mL"
   
-  #' Run the `QualificatitonWorklfow`
+  #' Run the `QualificationWorkflow`
   workflow$runWorkflow()
 
   #' Print timer tracked time if option `recordWorkflowTime` is set to TRUE
