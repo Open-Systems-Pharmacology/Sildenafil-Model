@@ -1,5 +1,5 @@
 {
-    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.1/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.3/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "Sildenafil",
@@ -121,72 +121,72 @@
         },
         "AllPlots": [
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "IV 20mg"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "IV 25mg"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "IV 40mg"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "IV 50mg"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "IV 80mg"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "Oral solution"
             },
             {
-                "SectionId": 332,
+                "SectionReference": "model-verification",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet MD 20/80mg fasted_Test"
             },
             {
-                "SectionId": 332,
+                "SectionReference": "model-verification",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet MD 20mg fasted_Test"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet SD 100mg fasted"
             },
             {
-                "SectionId": 332,
+                "SectionReference": "model-verification",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet SD 100mg fasted_Test"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet SD 20mg fasted"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet SD 25mg fasted"
             },
             {
-                "SectionId": 331,
+                "SectionReference": "model-building",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet SD 50mg fasted"
             },
             {
-                "SectionId": 332,
+                "SectionReference": "model-verification",
                 "Project": "Sildenafil",
                 "Simulation": "Tablet SD 50mg fasted_Test"
             }
@@ -194,13 +194,16 @@
         "GOFMergedPlots": [
             {
                 "Title": "Sildenafil concentration in plasma",
-                "SectionId": 32,
+                "SectionReference": "diagnostics-plots",
                 "Artifacts": [
                     "Plot",
                     "GMFE",
                     "Measure"
                 ],
-                "PlotType": "predictedVsObserved|residualsOverTime",
+                "PlotTypes": [
+                    "predictedVsObserved",
+                    "residualsOverTime"
+                ],
                 "Groups": [
                     {
                         "Caption": "Intravenous administration (model building)",
@@ -217,21 +220,11 @@
                                 "Project": "Sildenafil",
                                 "Simulation": "IV 25mg",
                                 "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Muirhead 2002b - 25mg-IV-Infusion-Subject 1 - Sildenafil - IV - 25 mg - Plasma - indiv.",
-                                "Color": "#2166ac"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "IV 25mg",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Muirhead 2002b - 25mg-IV-Infusion-Subject 2 - Sildenafil - IV - 25 mg - Plasma - indiv.",
-                                "Color": "#2166ac"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "IV 25mg",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Muirhead 2002b - 25mg-IV-Infusion-Subject 3 - Sildenafil - IV - 25 mg - Plasma - indiv.",
+                                "ObservedData": [
+                                    "Muirhead 2002b - 25mg-IV-Infusion-Subject 1 - Sildenafil - IV - 25 mg - Plasma - indiv.",
+                                    "Muirhead 2002b - 25mg-IV-Infusion-Subject 2 - Sildenafil - IV - 25 mg - Plasma - indiv.",
+                                    "Muirhead 2002b - 25mg-IV-Infusion-Subject 3 - Sildenafil - IV - 25 mg - Plasma - indiv."
+                                ],
                                 "Color": "#2166ac"
                             },
                             {
@@ -292,56 +285,30 @@
                                 "Project": "Sildenafil",
                                 "Simulation": "Tablet SD 25mg fasted",
                                 "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Lee 2021 - Itraconazole DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=16)",
-                                "Color": "#2166ac"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 25mg fasted",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Lee 2021 - Clarithromycin DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=15)",
-                                "Color": "#2166ac"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 50mg fasted",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Gillen 2017 - Panel 1-50mg-PO-Tablet-Fast - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                                "ObservedData": [
+                                    "Lee 2021 - Itraconazole DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=16)",
+                                    "Lee 2021 - Clarithromycin DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=15)"
+                                ],
                                 "Color": "#2166ac"
                             },
                             {
                                 "Project": "Sildenafil",
                                 "Simulation": "Tablet SD 50mg fasted",
                                 "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Abdelkawy 2016 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=9)",
-                                "Color": "#2166ac"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 50mg fasted",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Jetter 2002 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=24)",
-                                "Color": "#2166ac"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 50mg fasted",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Murtadha 2021 - 50mg-PO-Tablet-non smoker - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
-                                "Color": "#2166ac"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 50mg fasted",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Wilner 2002 - 50mg-PO-Tablet-Study I - Sildenafil - PO - 50 mg - Plasma - agg. (n=20)",
+                                "ObservedData": [
+                                    "Gillen 2017 - Panel 1-50mg-PO-Tablet-Fast - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                                    "Abdelkawy 2016 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=9)",
+                                    "Jetter 2002 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=24)",
+                                    "Murtadha 2021 - 50mg-PO-Tablet-non smoker - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                                    "Wilner 2002 - 50mg-PO-Tablet-Study I - Sildenafil - PO - 50 mg - Plasma - agg. (n=20)"
+                                ],
                                 "Color": "#2166ac"
                             }
                         ]
                     },
                     {
                         "Caption": "Oral administration, tablet (model verification)",
-                        "Symbol": "Square",
+                        "Symbol": "SquareOpen",
                         "OutputMappings": [
                             {
                                 "Project": "Sildenafil",
@@ -354,56 +321,32 @@
                                 "Project": "Sildenafil",
                                 "Simulation": "Tablet MD 20mg fasted_Test",
                                 "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Gotzkowsky 2013 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=18)",
-                                "Color": "#b2182b"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet MD 20mg fasted_Test",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Sidharta 2014 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=12)",
-                                "Color": "#b2182b"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 100mg fasted_Test",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Muirhead 2000 - 100mg-PO-Tablet-Study I - Sildenafil - PO - 100 mg - Plasma - agg. (n=27)",
+                                "ObservedData": [
+                                    "Gotzkowsky 2013 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=18)",
+                                    "Sidharta 2014 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=12)"
+                                ],
                                 "Color": "#b2182b"
                             },
                             {
                                 "Project": "Sildenafil",
                                 "Simulation": "Tablet SD 100mg fasted_Test",
                                 "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Muirhead 2000 - 100mg-PO-Tablet-Study II - Sildenafil - PO - 100 mg - Plasma - agg. (n=28)",
+                                "ObservedData": [
+                                    "Muirhead 2000 - 100mg-PO-Tablet-Study I - Sildenafil - PO - 100 mg - Plasma - agg. (n=27)",
+                                    "Muirhead 2000 - 100mg-PO-Tablet-Study II - Sildenafil - PO - 100 mg - Plasma - agg. (n=28)"
+                                ],
                                 "Color": "#b2182b"
                             },
                             {
                                 "Project": "Sildenafil",
                                 "Simulation": "Tablet SD 50mg fasted_Test",
                                 "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Wilner 2002 - 50mg-PO-Tablet-Study II - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
-                                "Color": "#b2182b"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 50mg fasted_Test",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Hedaya 2006 - Clarythromycin DDI, control group - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
-                                "Color": "#b2182b"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 50mg fasted_Test",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Gillen 2017 - Panel 2-50mg-PO-Tablet-Fast - Sildenafil - PO - 50 mg - Plasma - agg. (n=11)",
-                                "Color": "#b2182b"
-                            },
-                            {
-                                "Project": "Sildenafil",
-                                "Simulation": "Tablet SD 50mg fasted_Test",
-                                "Output": "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Al-Ghazawi 2010 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=6)",
+                                "ObservedData": [
+                                    "Wilner 2002 - 50mg-PO-Tablet-Study II - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                                    "Hedaya 2006 - Clarythromycin DDI, control group - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)",
+                                    "Gillen 2017 - Panel 2-50mg-PO-Tablet-Fast - Sildenafil - PO - 50 mg - Plasma - agg. (n=11)",
+                                    "Al-Ghazawi 2010 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=6)"
+                                ],
                                 "Color": "#b2182b"
                             }
                         ]
@@ -420,71 +363,71 @@
             "Project": "Sildenafil",
             "Name": "Sildenafil",
             "Type": "Compound",
-            "SectionId": 31
+            "SectionReference": "final-input-parameters"
         },
         {
             "Project": "Sildenafil",
             "Name": "Sildenafil Tablet",
             "Type": "Formulation",
-            "SectionId": 31
+            "SectionReference": "final-input-parameters"
         }
     ],
     "Sections": [
         {
-            "Id": 1,
-            "Title": "1 Introduction",
+            "Reference": "introduction",
+            "Title": "Introduction",
             "Content": "Content/Section1_Introduction.md"
         },
         {
-            "Id": 2,
-            "Title": "2 Methods",
+            "Reference": "methods",
+            "Title": "Methods",
             "Content": "Content/Section2_Methods.md",
             "Sections": [
                 {
-                    "Id": 21,
-                    "Title": "2.1 Modeling Strategy",
+                    "Reference": "modeling-strategy",
+                    "Title": "Modeling Strategy",
                     "Content": "Content/Section2.1_Modeling_Strategy.md"
                 },
                 {
-                    "Id": 22,
-                    "Title": "2.2 Data",
+                    "Reference": "data",
+                    "Title": "Data",
                     "Content": "Content/Section2.2_Data.md"
                 },
                 {
-                    "Id": 23,
-                    "Title": "2.3 Model Parameters and Assumptions",
+                    "Reference": "model-parameters-and-assumptions",
+                    "Title": "Model Parameters and Assumptions",
                     "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md"
                 }
             ]
         },
         {
-            "Id": 3,
-            "Title": "3 Results and Discussion",
+            "Reference": "results-and-discussion",
+            "Title": "Results and Discussion",
             "Content": "Content/Section3_Results_and_Discussion.md",
             "Sections": [
                 {
-                    "Id": 31,
-                    "Title": "3.1 Final input parameters",
+                    "Reference": "final-input-parameters",
+                    "Title": "Final input parameters",
                     "Content": "Content/Input_table.md"
                 },
                 {
-                    "Id": 32,
-                    "Title": "3.2 Diagnostics Plots",
+                    "Reference": "diagnostics-plots",
+                    "Title": "Diagnostics Plots",
                     "Content": "Content/GOF_diagnostics.md"
                 },
                 {
-                    "Id": 33,
-                    "Title": "3.3 Concentration-Time Profiles",
+                    "Reference": "ct-profiles",
+                    "Title": "Concentration-Time Profiles",
                     "Content": "Content/Concentration_time_profiles.md",
                     "Sections": [
                         {
-                            "Id": 331,
-                            "Title": "3.3.1 Model Building",
+                            "Reference": "model-building",
+                            "Title": "Model Building",
                             "Content": "Content/Concentration_time_profiles_building.md"
                         },
                         {
-                            "Id": 332,
-                            "Title": "3.3.2 Model Verification",
+                            "Reference": "model-verification",
+                            "Title": "Model Verification",
                             "Content": "Content/Concentration_time_profiles_verification.md"
                         }
                     ]
@@ -492,13 +435,13 @@
             ]
         },
         {
-            "Id": 4,
-            "Title": "4 Conclusion",
+            "Reference": "conclusion",
+            "Title": "Conclusion",
             "Content": "Content/Section4_Conclusion.md"
         },
         {
-            "Id": 5,
-            "Title": "5 References",
+            "Reference": "main-references",
+            "Title": "References",
             "Content": "Content/References.md"
         }
     ],

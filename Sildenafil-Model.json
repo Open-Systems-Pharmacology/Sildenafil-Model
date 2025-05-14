@@ -1,5 +1,5 @@
 {
-  "Version": 79,
+  "Version": 80,
   "ExpressionProfiles": [
     {
       "Type": "Enzyme",
@@ -2907,7 +2907,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|IV 50mg SD|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|IV 50mg SD|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 50.0,
           "Unit": "min"
         },
@@ -3138,6 +3138,13 @@
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IV 50mg|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Nichols 2002 - 50mg-IV-Infusion - Sildenafil - IV - 50 mg - Plasma - agg. (n=12)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
         {
@@ -3320,7 +3327,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|IV 25mg SD|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|IV 25mg SD|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 25.0,
           "Unit": "min"
         },
@@ -3551,6 +3558,23 @@
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IV 25mg|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Muirhead 2002b - 25mg-IV-Infusion-Subject 1 - Sildenafil - IV - 25 mg - Plasma - indiv."
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IV 25mg|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Muirhead 2002b - 25mg-IV-Infusion-Subject 2 - Sildenafil - IV - 25 mg - Plasma - indiv."
+        },
+        {
+          "Scaling": "Log",
+          "Path": "IV 25mg|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Muirhead 2002b - 25mg-IV-Infusion-Subject 3 - Sildenafil - IV - 25 mg - Plasma - indiv."
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
         {
@@ -3753,7 +3777,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 50mg SD|Sildenafil Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 50mg SD|Sildenafil Solution|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -3983,6 +4007,13 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Oral solution|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Walker 1999 - 50mg-PO-Solution - Sildenafil - PO - 50 mg - Plasma - agg. (n=3)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -4166,7 +4197,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 100mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 100mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -4396,6 +4427,13 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 100mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Nichols 2002 - 100mg-PO-Tablet-Fasted - Sildenafil - PO - 100 mg - Plasma - agg. (n=34)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -4579,7 +4617,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 20mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -4809,6 +4847,13 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 20mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Spence 2008 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=19)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -4993,7 +5038,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 25mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 25mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -5223,6 +5268,18 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 25mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Lee 2021 - Clarithromycin DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=15)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 25mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Lee 2021 - Itraconazole DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=16)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -5421,7 +5478,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 50mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 50mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -5651,6 +5708,33 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Abdelkawy 2016 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=9)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Gillen 2017 - Panel 1-50mg-PO-Tablet-Fast - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Jetter 2002 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=24)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Murtadha 2021 - 50mg-PO-Tablet-non smoker - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wilner 2002 - 50mg-PO-Tablet-Study I - Sildenafil - PO - 50 mg - Plasma - agg. (n=20)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -5878,7 +5962,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|IV 20mg SD|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|IV 20mg SD|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 40.0,
           "Unit": "min"
         },
@@ -6106,6 +6190,13 @@
       "OutputSelections": [
         "Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IV 20mg|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "FDA review, Study 148-203 - 20mg-IV-Infusion - Sildenafil - IV - 20 mg - Plasma - indiv."
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
         {
@@ -6286,7 +6377,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|IV 40mg SD|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|IV 40mg SD|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 40.0,
           "Unit": "min"
         },
@@ -6516,6 +6607,13 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IV 40mg|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "FDA review, Study 148-203 - 40mg-IV-Infusion - Sildenafil - IV - 40 mg - Plasma - indiv."
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -6697,7 +6795,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|IV 80mg SD|Application_1|ProtocolSchemaItem|Infusion time",
+          "Path": "Events|IV 80mg SD|Application_1|ProtocolSchemaItem|Infusion time",
           "Value": 40.0,
           "Unit": "min"
         },
@@ -6927,6 +7025,13 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "IV 80mg|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "FDA review, Study 148-203 - 80mg-IV-Infusion - Sildenafil - IV - 80 mg - Plasma - indiv."
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -7112,67 +7217,67 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20mg TID5|Sildenafil Tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20mg TID5|Sildenafil Tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -7402,6 +7507,18 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet MD 20mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Gotzkowsky 2013 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=18)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet MD 20mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Sidharta 2014 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=12)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -7599,7 +7716,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 50mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 50mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -7829,6 +7946,28 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Wilner 2002 - 50mg-PO-Tablet-Study II - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Hedaya 2006 - Clarythromycin DDI, control group - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Gillen 2017 - Panel 2-50mg-PO-Tablet-Fast - Sildenafil - PO - 50 mg - Plasma - agg. (n=11)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 50mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Al-Ghazawi 2010 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=6)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -8047,162 +8186,162 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_10|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_11|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_12|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_13|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_14|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_15|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_15|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_16|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_16|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_17|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_17|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_18|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_18|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_19|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_19|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_2|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_20|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_20|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_21|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_21|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_22|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_22|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_23|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_23|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_24|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_24|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_25|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_25|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_26|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_26|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_27|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_27|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_28|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_28|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_29|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_29|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_3|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_30|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_30|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_31|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_31|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_32|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_32|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_4|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_5|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_6|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_7|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_8|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
         {
-          "Path": "Applications|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 20-80-0-20-80mg|Sildenafil Tablet|Application_9|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -8432,6 +8571,13 @@
         "Organism|Sildenafil-CYP3A4-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet MD 20/80mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Burgess 2008 - MD 20mg, 80mg-PO-Tablet - Sildenafil - PO - 20, 80, 80, 0, 20, 80, 80 mg - Plasma - agg. (n=18)"
+        }
       ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
@@ -8616,7 +8762,7 @@
       ],
       "Parameters": [
         {
-          "Path": "Applications|PO 100mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Path": "Events|PO 100mg SD|Sildenafil Tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
           "Value": 3.5,
           "Unit": "ml/kg"
         },
@@ -8847,6 +8993,18 @@
         "Organism|Sildenafil-CYP2C9-Warrington Metabolite|Total fraction of dose-Sildenafil",
         "Organism|Sildenafil-CYP2C19-Warrington Metabolite|Total fraction of dose-Sildenafil"
       ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 100mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Muirhead 2000 - 100mg-PO-Tablet-Study I - Sildenafil - PO - 100 mg - Plasma - agg. (n=27)"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Tablet SD 100mg fasted_Test|Organism|PeripheralVenousBlood|Sildenafil|Plasma (Peripheral Venous Blood)",
+          "ObservedData": "Muirhead 2000 - 100mg-PO-Tablet-Study II - Sildenafil - PO - 100 mg - Plasma - agg. (n=28)"
+        }
+      ],
       "Individual": "European (P-gp modified, CYP3A4, 2C9, 2C19 36 h)",
       "Compounds": [
         {
@@ -9013,31 +9171,38 @@
           "Properties": [
             {
               "Name": "ftol",
-              "Value": 0.001
+              "Value": 0.001,
+              "Type": "Double"
             },
             {
               "Name": "xtol",
-              "Value": 1E-06
+              "Value": 1E-06,
+              "Type": "Double"
             },
             {
               "Name": "gtol",
-              "Value": 1E-10
+              "Value": 1E-10,
+              "Type": "Double"
             },
             {
               "Name": "stepfactor",
-              "Value": 100.0
+              "Value": 100.0,
+              "Type": "Double"
             },
             {
               "Name": "maxiter",
-              "Value": 200
+              "Value": 200.0,
+              "Type": "Double"
             },
             {
               "Name": "maxfev",
-              "Value": 0
+              "Value": 0.0,
+              "Type": "Double"
             },
             {
               "Name": "epsfcn",
-              "Value": 1E-09
+              "Value": 1E-09,
+              "Type": "Double"
             }
           ]
         }
@@ -9526,10 +9691,10 @@
           "Scaling": "Log",
           "IsFixed": true,
           "LinkedParameters": [
-            "Tablet SD 100mg fasted|Applications|PO 100mg SD|Sildenafil Tablet|Dissolution shape",
-            "Tablet SD 20mg fasted|Applications|PO 20mg SD|Sildenafil Tablet|Dissolution shape",
-            "Tablet SD 25mg fasted|Applications|PO 25mg SD|Sildenafil Tablet|Dissolution shape",
-            "Tablet SD 50mg fasted|Applications|PO 50mg SD|Sildenafil Tablet|Dissolution shape"
+            "Tablet SD 100mg fasted|Events|PO 100mg SD|Sildenafil Tablet|Dissolution shape",
+            "Tablet SD 20mg fasted|Events|PO 20mg SD|Sildenafil Tablet|Dissolution shape",
+            "Tablet SD 25mg fasted|Events|PO 25mg SD|Sildenafil Tablet|Dissolution shape",
+            "Tablet SD 50mg fasted|Events|PO 50mg SD|Sildenafil Tablet|Dissolution shape"
           ],
           "Parameters": [
             {
@@ -9551,10 +9716,10 @@
           "Scaling": "Log",
           "IsFixed": true,
           "LinkedParameters": [
-            "Tablet SD 100mg fasted|Applications|PO 100mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)",
-            "Tablet SD 20mg fasted|Applications|PO 20mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)",
-            "Tablet SD 25mg fasted|Applications|PO 25mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)",
-            "Tablet SD 50mg fasted|Applications|PO 50mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)"
+            "Tablet SD 100mg fasted|Events|PO 100mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)",
+            "Tablet SD 20mg fasted|Events|PO 20mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)",
+            "Tablet SD 25mg fasted|Events|PO 25mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)",
+            "Tablet SD 50mg fasted|Events|PO 50mg SD|Sildenafil Tablet|Dissolution time (50% dissolved)"
           ],
           "Parameters": [
             {
@@ -10409,1223 +10574,7 @@
               "BackColor": "#FFFFFF",
               "DiagramBackColor": "#FFFFFF"
             }
-          },
-          "DataRepositories": [
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "IV 25mg|Organism|PeripheralVenousBlood|Sildenafil|Muirhead 2002b - 25mg-IV-Infusion-Subject 1 - Sildenafil - IV - 25 mg - Plasma - indiv.|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.804568231,
-                    0.538953066,
-                    0.296803027,
-                    -0.2851803,
-                    -0.40327096,
-                    -0.3751496,
-                    -0.4154191,
-                    -0.353805751,
-                    -0.369517535,
-                    -0.5788215,
-                    -0.188861519
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.0833333358,
-                  0.166666672,
-                  0.416666657,
-                  0.75,
-                  1.0,
-                  1.5,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "IV 25mg|Organism|PeripheralVenousBlood|Sildenafil|Muirhead 2002b - 25mg-IV-Infusion-Subject 2 - Sildenafil - IV - 25 mg - Plasma - indiv.|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.152686551,
-                    0.189490721,
-                    0.201372951,
-                    0.147268951,
-                    -0.16555661,
-                    -0.297088176,
-                    -0.268966883,
-                    -0.30117175,
-                    -0.273160636,
-                    -0.3856466,
-                    -0.324789166,
-                    -0.3004206,
-                    -0.4453871
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.0833333358,
-                  0.166666672,
-                  0.416666657,
-                  0.5,
-                  0.75,
-                  1.0,
-                  1.5,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0,
-                  12.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "IV 25mg|Organism|PeripheralVenousBlood|Sildenafil|Muirhead 2002b - 25mg-IV-Infusion-Subject 3 - Sildenafil - IV - 25 mg - Plasma - indiv.|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.5223102,
-                    0.340028346,
-                    0.237663224,
-                    0.120387204,
-                    -0.181685686,
-                    -0.289023638,
-                    -0.344235659,
-                    -0.361655623,
-                    -0.3793434,
-                    -0.4205928,
-                    -0.35704723,
-                    -0.149882987
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.0833333358,
-                  0.166666672,
-                  0.416666657,
-                  0.5,
-                  0.75,
-                  1.0,
-                  1.5,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "IV 50mg|Organism|PeripheralVenousBlood|Sildenafil|Nichols 2002 - 50mg-IV-Infusion - Sildenafil - IV - 50 mg - Plasma - agg. (n=12)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.5743494,
-                    0.4797347,
-                    0.405040324,
-                    0.288943678,
-                    -0.0457694419,
-                    -0.0266412776,
-                    -0.0105062844,
-                    -0.011848243,
-                    0.0114601478,
-                    0.0357512571,
-                    0.148009151,
-                    0.294049084,
-                    0.36369592,
-                    0.398393035,
-                    0.422849327,
-                    0.483216971,
-                    0.172276288,
-                    -0.2906103
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.25,
-                  0.5,
-                  0.67,
-                  0.9,
-                  1.2,
-                  1.25,
-                  1.5,
-                  2.0,
-                  2.5,
-                  3.0,
-                  4.0,
-                  5.0,
-                  6.0,
-                  8.0,
-                  10.0,
-                  12.0,
-                  18.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "IV 20mg|Organism|PeripheralVenousBlood|Sildenafil|FDA review, Study 148-203 - 20mg-IV-Infusion - Sildenafil - IV - 20 mg - Plasma - indiv.|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.381176144,
-                    0.447386026,
-                    0.1482589,
-                    0.188884437,
-                    0.3702575,
-                    0.339533538,
-                    0.04924262,
-                    0.07553074,
-                    0.277142137,
-                    0.119392917,
-                    0.038431637,
-                    0.3600819,
-                    0.312874556,
-                    0.462271,
-                    0.043148797,
-                    0.316445917,
-                    0.04315935,
-                    -0.197281748,
-                    -0.194062114,
-                    -0.1287703,
-                    -0.09747585,
-                    -0.265373915,
-                    -0.05130994,
-                    0.007095403,
-                    -0.237862021,
-                    -0.151783854,
-                    -0.208709836,
-                    -0.14840427,
-                    0.0207505431,
-                    -0.19388473,
-                    -0.2760117,
-                    -0.0927222,
-                    -0.07232825,
-                    -0.00142137194,
-                    -0.156645477,
-                    -0.09281261,
-                    -0.02576584,
-                    0.162916392,
-                    0.062303,
-                    -0.05743074,
-                    -0.0006555501,
-                    -0.191833764,
-                    0.244053409,
-                    0.773491442,
-                    0.09255259
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.213931575,
-                  0.235608712,
-                  0.246103317,
-                  0.2577885,
-                  0.416239679,
-                  0.455925256,
-                  0.460952073,
-                  0.4627864,
-                  0.6165723,
-                  0.6178511,
-                  0.6220225,
-                  0.6405777,
-                  0.6488411,
-                  0.6646536,
-                  0.7568828,
-                  0.769053042,
-                  0.911515355,
-                  0.944039762,
-                  0.9873588,
-                  1.00101948,
-                  1.45060384,
-                  1.45562184,
-                  1.47245729,
-                  1.47372711,
-                  1.47740483,
-                  1.48019159,
-                  1.92392015,
-                  1.92550766,
-                  1.93927407,
-                  1.94503284,
-                  1.95294356,
-                  1.96815634,
-                  1.96857965,
-                  2.45552135,
-                  2.4631145,
-                  2.47469378,
-                  2.96124744,
-                  2.96329355,
-                  2.98296,
-                  3.93132114,
-                  3.94223022,
-                  3.98121023,
-                  3.98530221,
-                  4.94587755,
-                  4.964415
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "IV 40mg|Organism|PeripheralVenousBlood|Sildenafil|FDA review, Study 148-203 - 40mg-IV-Infusion - Sildenafil - IV - 40 mg - Plasma - indiv.|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.6440257,
-                    0.154983029,
-                    0.241162911,
-                    -0.0114675714,
-                    0.651078641,
-                    0.0363653451,
-                    0.137074545,
-                    0.6187034,
-                    -0.00551117025,
-                    0.152823776,
-                    0.0760044456,
-                    0.186923712,
-                    0.323183715,
-                    0.07170217,
-                    0.00261011859,
-                    0.08418282,
-                    -0.0373025239,
-                    0.262118,
-                    0.274256766,
-                    0.3675449,
-                    0.133576,
-                    -0.106820896,
-                    -0.0558258072,
-                    0.319214553,
-                    -0.201310992,
-                    0.096279934,
-                    0.00226087356,
-                    -0.183023512,
-                    -0.134267047,
-                    -0.02328776,
-                    -0.194785044,
-                    -0.08222719,
-                    -0.334747046,
-                    0.0401571579,
-                    -0.154257089,
-                    -0.06876292,
-                    0.0242237635,
-                    -0.351136476,
-                    -0.202762663,
-                    0.0489332639,
-                    -0.111581638,
-                    0.128973573,
-                    0.2107527,
-                    -0.30584234,
-                    -0.177636877,
-                    -0.0885082856,
-                    0.03623891,
-                    -0.177484617,
-                    -0.0744166,
-                    0.18144007,
-                    -0.212158144,
-                    -0.0216095522,
-                    0.09839301,
-                    0.3412464,
-                    -0.132238641,
-                    0.6063804,
-                    0.0151267964
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.102946021,
-                  0.22781612,
-                  0.2315335,
-                  0.249191046,
-                  0.2638071,
-                  0.273227274,
-                  0.2793525,
-                  0.30647245,
-                  0.438566118,
-                  0.439960122,
-                  0.456012428,
-                  0.463531673,
-                  0.4921724,
-                  0.595033944,
-                  0.5994694,
-                  0.6068197,
-                  0.6167468,
-                  0.6405296,
-                  0.7102304,
-                  0.749812,
-                  0.7511215,
-                  0.8081495,
-                  0.8719786,
-                  0.919163942,
-                  0.921656251,
-                  0.947213233,
-                  0.9552394,
-                  1.00352311,
-                  1.44973516,
-                  1.45290339,
-                  1.45864844,
-                  1.46232355,
-                  1.46354854,
-                  1.465365,
-                  1.92192662,
-                  1.92412329,
-                  1.92606628,
-                  1.93688059,
-                  1.94245672,
-                  1.94845521,
-                  2.428039,
-                  2.43205214,
-                  2.43298125,
-                  2.44468284,
-                  2.4484427,
-                  2.45047021,
-                  2.9459374,
-                  2.95324564,
-                  2.955231,
-                  2.958526,
-                  2.97440934,
-                  3.89847326,
-                  3.8996985,
-                  3.901346,
-                  3.91891885,
-                  4.909178,
-                  4.95028
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "IV 80mg|Organism|PeripheralVenousBlood|Sildenafil|FDA review, Study 148-203 - 80mg-IV-Infusion - Sildenafil - IV - 80 mg - Plasma - indiv.|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.427966058,
-                    0.2437629,
-                    0.145707443,
-                    0.305110544,
-                    0.376022935,
-                    0.413999557,
-                    -0.0111944685,
-                    0.08220573,
-                    0.111648567,
-                    0.289251626,
-                    0.0889166445,
-                    -0.05113943,
-                    0.0312423874,
-                    0.210310459,
-                    0.117313586,
-                    0.328843772,
-                    0.03668404,
-                    0.06505604,
-                    -0.17473112,
-                    0.00183630944,
-                    -0.0553782955,
-                    -0.2838637,
-                    -0.111482568,
-                    -0.09055796,
-                    -0.22075747,
-                    -0.1637201,
-                    -0.224551946,
-                    -0.2889764,
-                    -0.0488277264,
-                    -0.364870131,
-                    -0.301599354,
-                    -0.272134781,
-                    -0.250334948,
-                    -0.467485666,
-                    -0.207176238,
-                    -0.184746519,
-                    -0.146540388,
-                    -0.247193187,
-                    -0.0915835,
-                    -0.228640512,
-                    -0.1673088,
-                    -0.136590689,
-                    -0.312060952,
-                    -0.195448816,
-                    -0.120217107,
-                    -0.01989116,
-                    -0.325214535,
-                    -0.256790757,
-                    0.134739414,
-                    -0.0901746,
-                    0.218149766,
-                    -0.11915341
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.292499244,
-                  0.2984626,
-                  0.3055134,
-                  0.320641935,
-                  0.353237748,
-                  0.354066223,
-                  0.430882573,
-                  0.435853481,
-                  0.447486848,
-                  0.485079467,
-                  0.6316182,
-                  0.633154333,
-                  0.6386431,
-                  0.6682529,
-                  0.6859014,
-                  0.7603358,
-                  0.7957105,
-                  0.796746135,
-                  0.8080515,
-                  0.9357594,
-                  0.9449073,
-                  0.9470648,
-                  0.9539257,
-                  0.9652743,
-                  0.982275546,
-                  1.447385,
-                  1.45640337,
-                  1.46511114,
-                  1.47052228,
-                  1.48364,
-                  1.48568535,
-                  1.48653972,
-                  1.48713517,
-                  1.96189308,
-                  1.96909058,
-                  1.9695307,
-                  1.97022963,
-                  1.98914683,
-                  2.41995168,
-                  2.44913,
-                  2.45016551,
-                  2.45063162,
-                  2.4683578,
-                  2.92984271,
-                  2.95171118,
-                  2.9527986,
-                  2.958969,
-                  3.961905,
-                  3.96516728,
-                  3.97408223,
-                  4.955538,
-                  4.96427155
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Oral solution|Organism|PeripheralVenousBlood|Sildenafil|Walker 1999 - 50mg-PO-Solution - Sildenafil - PO - 50 mg - Plasma - agg. (n=3)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    -0.109271117,
-                    -0.0501191765,
-                    -0.0220478754,
-                    -0.0429114439,
-                    -0.0486613773,
-                    -0.0847608149,
-                    0.1329227,
-                    0.158704862,
-                    0.288915783,
-                    0.280566275,
-                    0.0901423842
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.17,
-                  1.0,
-                  1.5,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0,
-                  12.0,
-                  18.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 100mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Nichols 2002 - 100mg-PO-Tablet-Fasted - Sildenafil - PO - 100 mg - Plasma - agg. (n=34)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    -1.40502274,
-                    -0.388459921,
-                    -0.388058752,
-                    -0.0714519843,
-                    -0.0704054758,
-                    -0.08946172,
-                    -0.128134578,
-                    -0.166423529,
-                    0.008549232,
-                    -0.0191391055,
-                    -0.0336950272,
-                    -0.0223412924,
-                    -0.306927621,
-                    -0.5065012
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.0,
-                  0.33,
-                  0.5,
-                  1.17,
-                  1.5,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0,
-                  10.0,
-                  12.0,
-                  18.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 20mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Spence 2008 - 20mg-PO-Tablet - Sildenafil - PO - 20 mg - Plasma - agg. (n=19)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.192014456,
-                    0.0438529029,
-                    0.0287056789,
-                    0.0198689252,
-                    0.004252727,
-                    -0.0155104334,
-                    -0.0118731791,
-                    0.116799958,
-                    0.1358786,
-                    0.0421878956,
-                    0.09112998,
-                    -0.248937055,
-                    -0.60212785
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.5,
-                  1.0,
-                  1.5,
-                  2.0,
-                  2.5,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0,
-                  10.0,
-                  12.0,
-                  18.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 25mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Lee 2021 - Clarithromycin DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=15)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.06449419,
-                    -0.243470818,
-                    -0.19256559,
-                    -0.120944656,
-                    -0.0760782361,
-                    -0.0237824544,
-                    -0.113328516,
-                    -0.125404611,
-                    0.080751,
-                    0.128641039,
-                    0.140745476,
-                    -0.617418945
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.17,
-                  0.33,
-                  0.5,
-                  0.75,
-                  1.0,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0,
-                  12.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 25mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Lee 2021 - Itraconazole DDI, control group - Sildenafil - PO - 25 mg - Plasma - agg. (n=16)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    -0.130417362,
-                    -0.242982924,
-                    -0.06039454,
-                    -0.0187019873,
-                    0.0325736031,
-                    -0.00652951049,
-                    -0.04220168,
-                    0.222140983,
-                    0.271130651,
-                    0.292735368
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.17,
-                  0.5,
-                  0.75,
-                  1.0,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0,
-                  12.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Abdelkawy 2016 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=9)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.450420827,
-                    0.5688272,
-                    0.35348025,
-                    -0.367664069,
-                    -0.214969888,
-                    0.09548207,
-                    0.153038546,
-                    0.217035517,
-                    0.294865817
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.25,
-                  0.5,
-                  0.75,
-                  1.0,
-                  1.5,
-                  3.0,
-                  5.0,
-                  8.0,
-                  10.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Gillen 2017 - Panel 1-50mg-PO-Tablet-Fast - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.754949033,
-                    0.2380916,
-                    0.108244672,
-                    0.0791738853,
-                    -0.0219378918,
-                    -0.0156337153,
-                    0.0775692537,
-                    0.150162563,
-                    0.233427539,
-                    0.323868424,
-                    0.1976971,
-                    0.852219939
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.5,
-                  1.0,
-                  1.5,
-                  2.0,
-                  3.0,
-                  4.0,
-                  5.0,
-                  6.0,
-                  8.0,
-                  16.0,
-                  20.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Jetter 2002 - 50mg-PO-Tablet - Sildenafil - PO - 50 mg - Plasma - agg. (n=24)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    -0.33883962,
-                    -0.197931737,
-                    -0.105593063,
-                    -0.0434031636,
-                    0.0151635157,
-                    0.0174419638,
-                    0.0114809135,
-                    0.000472511456,
-                    -0.02446405,
-                    -0.0309580881,
-                    -0.0780649856,
-                    -0.112706229,
-                    0.0498352945,
-                    0.103720985,
-                    0.1767534,
-                    0.244323224,
-                    0.11997924,
-                    0.106012508,
-                    0.00315172225
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.25,
-                  0.5,
-                  0.75,
-                  1.0,
-                  1.25,
-                  1.5,
-                  1.75,
-                  2.0,
-                  2.5,
-                  3.0,
-                  3.5,
-                  4.0,
-                  5.0,
-                  6.0,
-                  8.0,
-                  10.0,
-                  12.0,
-                  16.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Murtadha 2021 - 50mg-PO-Tablet-non smoker - Sildenafil - PO - 50 mg - Plasma - agg. (n=12)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    0.178232133,
-                    0.0519060828,
-                    -0.0433616,
-                    -0.0437691174,
-                    -0.04479386,
-                    -0.0234915856,
-                    -0.03775197,
-                    -0.0410751067,
-                    -0.04137884,
-                    -0.0437827334,
-                    -0.0360842273,
-                    0.0058166543,
-                    0.08873121,
-                    0.0625891462,
-                    0.04888164,
-                    -0.0933707
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.17,
-                  0.33,
-                  0.5,
-                  0.75,
-                  1.0,
-                  1.5,
-                  2.0,
-                  2.5,
-                  3.0,
-                  3.5,
-                  4.0,
-                  6.0,
-                  8.0,
-                  10.0,
-                  12.0,
-                  24.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            },
-            {
-              "Name": "Simulation Results for Run 1",
-              "Columns": [
-                {
-                  "Name": "Values",
-                  "QuantityInfo": {
-                    "Path": "Tablet SD 50mg fasted|Organism|PeripheralVenousBlood|Sildenafil|Wilner 2002 - 50mg-PO-Tablet-Study I - Sildenafil - PO - 50 mg - Plasma - agg. (n=20)|Plasma (Peripheral Venous Blood)"
-                  },
-                  "DataInfo": {
-                    "Origin": "CalculationAuxiliary",
-                    "AuxiliaryType": "Undefined"
-                  },
-                  "Values": [
-                    -0.356457025,
-                    -0.420617551,
-                    -0.14597477,
-                    -0.07028945,
-                    -0.09040323,
-                    -0.163383543,
-                    -0.162992716,
-                    0.116890036,
-                    0.2149102,
-                    0.485496223,
-                    0.187149152
-                  ],
-                  "Dimension": "Dimensionless"
-                }
-              ],
-              "BaseGrid": {
-                "Name": "Time",
-                "QuantityInfo": {
-                  "Type": "Time"
-                },
-                "DataInfo": {
-                  "Origin": "BaseGrid",
-                  "AuxiliaryType": "Undefined"
-                },
-                "Values": [
-                  0.17,
-                  0.33,
-                  1.0,
-                  1.5,
-                  2.0,
-                  3.0,
-                  4.0,
-                  6.0,
-                  8.0,
-                  10.0,
-                  12.0
-                ],
-                "Dimension": "Time",
-                "Unit": "h"
-              }
-            }
-          ]
+          }
         }
       ]
     }
@@ -11636,75 +10585,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16031.0
+          "Value": 16031.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Abdelkawy 2016"
+          "Value": "Abdelkawy 2016",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/27550653/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/27550653/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 3"
+          "Value": "Fig. 3",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet"
+          "Value": "50mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 9.0
+          "Value": 9.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -11763,75 +10730,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16032.0
+          "Value": 16032.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Al-Ghazawi 2010"
+          "Value": "Al-Ghazawi 2010",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/19830413/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/19830413/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet"
+          "Value": "50mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 6.0
+          "Value": 6.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -11926,75 +10911,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16033.0
+          "Value": 16033.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Burgess 2008"
+          "Value": "Burgess 2008",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/18040672/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/18040672/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "MD 20mg, 80mg-PO-Tablet"
+          "Value": "MD 20mg, 80mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 18.0
+          "Value": 18.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "20, 80, 80, 0, 20, 80, 80 mg"
+          "Value": "20, 80, 80, 0, 20, 80, 80 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "20mg(S0-T8-R9), 80mg(S72-T8-R7), 20mg(S240-T8-R9), 80mg(S312-T8-R7)"
+          "Value": "20mg(S0-T8-R9), 80mg(S72-T8-R7), 20mg(S240-T8-R9), 80mg(S312-T8-R7)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Unknown"
+          "Value": "Unknown",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12086,75 +11089,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16034.0
+          "Value": 16034.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Gillen 2017"
+          "Value": "Gillen 2017",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1A"
+          "Value": "Fig. 1A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Panel 1-50mg-PO-Tablet-Fast"
+          "Value": "Panel 1-50mg-PO-Tablet-Fast",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12248,75 +11269,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16036.0
+          "Value": 16036.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Gillen 2017"
+          "Value": "Gillen 2017",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1C"
+          "Value": "Fig. 1C",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Panel 3-50mg-PO-Tablet-Fed"
+          "Value": "Panel 3-50mg-PO-Tablet-Fed",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12407,75 +11446,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16037.0
+          "Value": 16037.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Gillen 2017"
+          "Value": "Gillen 2017",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1D"
+          "Value": "Fig. 1D",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Panel 4-50mg-PO-Tablet-Fed"
+          "Value": "Panel 4-50mg-PO-Tablet-Fed",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12572,75 +11629,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16038.0
+          "Value": 16038.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Gotzkowsky 2013"
+          "Value": "Gotzkowsky 2013",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/23429588/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/23429588/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "20mg-PO-Tablet"
+          "Value": "20mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 18.0
+          "Value": 18.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "20 mg"
+          "Value": "20 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T8-R13)"
+          "Value": "(S0-T8-R13)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "irrespective to food intake"
+          "Value": "irrespective to food intake",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12744,75 +11819,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16039.0
+          "Value": 16039.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Hedaya 2006"
+          "Value": "Hedaya 2006",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/16372380/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/16372380/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Clarythromycin DDI, control group"
+          "Value": "Clarythromycin DDI, control group",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -12903,75 +11996,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16040.0
+          "Value": 16040.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Jetter 2002"
+          "Value": "Jetter 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11823754/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11823754/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 3"
+          "Value": "Fig. 3",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet"
+          "Value": "50mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 24.0
+          "Value": 24.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13051,75 +12162,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16041.0
+          "Value": 16041.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Jetter 2005"
+          "Value": "Jetter 2005",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/16198665/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/16198665/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet-CYP2C9*1/*1 homozygotes"
+          "Value": "50mg-PO-Tablet-CYP2C9*1/*1 homozygotes",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 15.0
+          "Value": 15.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13198,75 +12327,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16042.0
+          "Value": 16042.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Jetter 2005"
+          "Value": "Jetter 2005",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/16198665/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/16198665/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet-CYP2C9*1/*2 heterozygotes"
+          "Value": "50mg-PO-Tablet-CYP2C9*1/*2 heterozygotes",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 3.0
+          "Value": 3.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13343,75 +12490,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16043.0
+          "Value": 16043.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Jetter 2005"
+          "Value": "Jetter 2005",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/16198665/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/16198665/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet-CYP2C9*1/*3 heterozygotes"
+          "Value": "50mg-PO-Tablet-CYP2C9*1/*3 heterozygotes",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 5.0
+          "Value": 5.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13490,75 +12655,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16044.0
+          "Value": 16044.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Lee 2021"
+          "Value": "Lee 2021",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/33348240/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/33348240/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1A"
+          "Value": "Fig. 1A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Clarithromycin DDI, control group"
+          "Value": "Clarithromycin DDI, control group",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 15.0
+          "Value": 15.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "25 mg"
+          "Value": "25 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13652,75 +12835,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16045.0
+          "Value": 16045.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Lee 2021"
+          "Value": "Lee 2021",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/33348240/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/33348240/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1B"
+          "Value": "Fig. 1B",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Itraconazole DDI, control group"
+          "Value": "Itraconazole DDI, control group",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 16.0
+          "Value": 16.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "25 mg"
+          "Value": "25 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13808,75 +13009,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16046.0
+          "Value": 16046.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Mora-Peris 2015"
+          "Value": "Mora-Peris 2015",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/25693997/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/25693997/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1A"
+          "Value": "Fig. 1A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "25mg-PO-Tablet"
+          "Value": "25mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 13.0
+          "Value": 13.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "25 mg"
+          "Value": "25 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -13938,75 +13157,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16048.0
+          "Value": 16048.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2002a"
+          "Value": "Muirhead 2002a",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879258/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879258/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2A"
+          "Value": "Fig. 2A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Azythromycin DDI, control group, D1"
+          "Value": "Azythromycin DDI, control group, D1",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14073,75 +13310,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16049.0
+          "Value": 16049.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2000"
+          "Value": "Muirhead 2000",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/10930961/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/10930961/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1A"
+          "Value": "Fig. 1A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "100mg-PO-Tablet-Study I"
+          "Value": "100mg-PO-Tablet-Study I",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 27.0
+          "Value": 27.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Unknown"
+          "Value": "Unknown",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14204,75 +13459,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16050.0
+          "Value": 16050.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2000"
+          "Value": "Muirhead 2000",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/10930961/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/10930961/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2A"
+          "Value": "Fig. 2A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "100mg-PO-Tablet-Study II"
+          "Value": "100mg-PO-Tablet-Study II",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 28.0
+          "Value": 28.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Unknown"
+          "Value": "Unknown",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14335,75 +13608,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16051.0
+          "Value": 16051.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Murtadha 2021"
+          "Value": "Murtadha 2021",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/34199328/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/34199328/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet-non smoker"
+          "Value": "50mg-PO-Tablet-non smoker",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14477,75 +13768,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16052.0
+          "Value": 16052.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Nichols 2002"
+          "Value": "Nichols 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Capsule"
+          "Value": "50mg-PO-Capsule",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Capsule"
+          "Value": "Capsule",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14615,75 +13924,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16053.0
+          "Value": 16053.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Nichols 2002"
+          "Value": "Nichols 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-IV-Infusion"
+          "Value": "50mg-IV-Infusion",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14761,75 +14088,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16054.0
+          "Value": 16054.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Nichols 2002"
+          "Value": "Nichols 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "100mg-PO-Tablet-Fasted"
+          "Value": "100mg-PO-Tablet-Fasted",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 34.0
+          "Value": 34.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -14899,75 +14244,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16055.0
+          "Value": 16055.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Nichols 2002"
+          "Value": "Nichols 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879254/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "100mg-PO-Tablet-Fed"
+          "Value": "100mg-PO-Tablet-Fed",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 34.0
+          "Value": 34.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15033,75 +14396,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16056.0
+          "Value": 16056.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Sekar 2008"
+          "Value": "Sekar 2008",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/18598093/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/18598093/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1A"
+          "Value": "Fig. 1A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "100mg-PO-Tablet"
+          "Value": "100mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 16.0
+          "Value": 16.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15161,75 +14542,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16057.0
+          "Value": 16057.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Sidharta 2014"
+          "Value": "Sidharta 2014",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/24962473/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/24962473/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 3A"
+          "Value": "Fig. 3A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "20mg-PO-Tablet"
+          "Value": "20mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "20 mg"
+          "Value": "20 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": "(S0-T8-R10)"
+          "Value": "(S0-T8-R10)",
+          "Type": "String"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Irrespective of food intake"
+          "Value": "Irrespective of food intake",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15324,75 +14723,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16058.0
+          "Value": 16058.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Spence 2008"
+          "Value": "Spence 2008",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/18832294/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/18832294/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 3"
+          "Value": "Fig. 3",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "20mg-PO-Tablet"
+          "Value": "20mg-PO-Tablet",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 19.0
+          "Value": 19.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "20 mg"
+          "Value": "20 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15459,75 +14876,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16059.0
+          "Value": 16059.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Walker 1999"
+          "Value": "Walker 1999",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/10219969/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/10219969/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2"
+          "Value": "Fig. 2",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Solution"
+          "Value": "50mg-PO-Solution",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 3.0
+          "Value": 3.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Solution"
+          "Value": "Solution",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Unknown"
+          "Value": "Unknown",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15591,75 +15026,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16061.0
+          "Value": 16061.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Wilner 2002"
+          "Value": "Wilner 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879257/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879257/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 2A"
+          "Value": "Fig. 2A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet-Study II"
+          "Value": "50mg-PO-Tablet-Study II",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15725,75 +15178,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16068.0
+          "Value": 16068.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Hesse 2005"
+          "Value": "Hesse 2005",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/16282844/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/16282844/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Fluvoxamine DDI, control group"
+          "Value": "Fluvoxamine DDI, control group",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 12.0
+          "Value": 12.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -15888,75 +15359,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16070.0
+          "Value": 16070.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2002a"
+          "Value": "Muirhead 2002a",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879258/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879258/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Erythromycin DDI, control group, D1"
+          "Value": "Erythromycin DDI, control group, D1",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 13.0
+          "Value": 13.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16019,75 +15508,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16071.0
+          "Value": 16071.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2002a"
+          "Value": "Muirhead 2002a",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879258/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879258/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 1",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Erythromycin DDI, control group, D6"
+          "Value": "Erythromycin DDI, control group, D6",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 13.0
+          "Value": 13.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "100 mg"
+          "Value": "100 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 120.0
+          "Value": 120.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fed"
+          "Value": "Fed",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16150,75 +15657,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16074.0
+          "Value": 16074.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2002b"
+          "Value": "Muirhead 2002b",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879255/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879255/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Figure 1a"
+          "Value": "Figure 1a",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "25mg-IV-Infusion-Subject 1"
+          "Value": "25mg-IV-Infusion-Subject 1",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "individual"
+          "Value": "individual",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 1.0
+          "Value": 1.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "25 mg"
+          "Value": "25 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16281,75 +15806,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16075.0
+          "Value": 16075.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2002b"
+          "Value": "Muirhead 2002b",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879255/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879255/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Figure 1a"
+          "Value": "Figure 1a",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "25mg-IV-Infusion-Subject 2"
+          "Value": "25mg-IV-Infusion-Subject 2",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "individual"
+          "Value": "individual",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 1.0
+          "Value": 1.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "25 mg"
+          "Value": "25 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16416,75 +15959,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16076.0
+          "Value": 16076.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Muirhead 2002b"
+          "Value": "Muirhead 2002b",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879255/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879255/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Figure 1a"
+          "Value": "Figure 1a",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "25mg-IV-Infusion-Subject 3"
+          "Value": "25mg-IV-Infusion-Subject 3",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "individual"
+          "Value": "individual",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 1.0
+          "Value": 1.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "25 mg"
+          "Value": "25 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16549,75 +16110,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16077.0
+          "Value": 16077.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "FDA review, Study 148-203"
+          "Value": "FDA review, Study 148-203",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/022473s000_ClinPharmR.pdf"
+          "Value": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/022473s000_ClinPharmR.pdf",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 7"
+          "Value": "Fig. 7",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "20mg-IV-Infusion"
+          "Value": "20mg-IV-Infusion",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "individual"
+          "Value": "individual",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 8.0
+          "Value": 8.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "20 mg"
+          "Value": "20 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16748,75 +16327,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16078.0
+          "Value": 16078.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "FDA review, Study 148-203"
+          "Value": "FDA review, Study 148-203",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/022473s000_ClinPharmR.pdf"
+          "Value": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/022473s000_ClinPharmR.pdf",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 7"
+          "Value": "Fig. 7",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "40mg-IV-Infusion"
+          "Value": "40mg-IV-Infusion",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "individual"
+          "Value": "individual",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 8.0
+          "Value": 8.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "40 mg"
+          "Value": "40 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -16971,75 +16568,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16079.0
+          "Value": 16079.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "FDA review, Study 148-203"
+          "Value": "FDA review, Study 148-203",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/022473s000_ClinPharmR.pdf"
+          "Value": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2009/022473s000_ClinPharmR.pdf",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 7"
+          "Value": "Fig. 7",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "80mg-IV-Infusion"
+          "Value": "80mg-IV-Infusion",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "individual"
+          "Value": "individual",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 8.0
+          "Value": 8.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "IV"
+          "Value": "IV",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "80 mg"
+          "Value": "80 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Infusion"
+          "Value": "Infusion",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -17184,75 +16799,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16035.0
+          "Value": 16035.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Gillen 2017"
+          "Value": "Gillen 2017",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/28067999/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1B"
+          "Value": "Fig. 1B",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "Panel 2-50mg-PO-Tablet-Fast"
+          "Value": "Panel 2-50mg-PO-Tablet-Fast",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 11.0
+          "Value": 11.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "Arith. SEM converted to arith. SD"
+          "Value": "Arith. SEM converted to arith. SD",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -17347,75 +16980,93 @@
       "ExtendedProperties": [
         {
           "Name": "DB Version",
-          "Value": "OSP DATABASE"
+          "Value": "OSP DATABASE",
+          "Type": "String"
         },
         {
           "Name": "ID",
-          "Value": 16060.0
+          "Value": 16060.0,
+          "Type": "Double"
         },
         {
           "Name": "Study Id",
-          "Value": "Wilner 2002"
+          "Value": "Wilner 2002",
+          "Type": "String"
         },
         {
           "Name": "Reference",
-          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879257/"
+          "Value": "https://pubmed.ncbi.nlm.nih.gov/11879257/",
+          "Type": "String"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1A"
+          "Value": "Fig. 1A",
+          "Type": "String"
         },
         {
           "Name": "Grouping",
-          "Value": "50mg-PO-Tablet-Study I"
+          "Value": "50mg-PO-Tablet-Study I",
+          "Type": "String"
         },
         {
           "Name": "Data type",
-          "Value": "aggregated"
+          "Value": "aggregated",
+          "Type": "String"
         },
         {
           "Name": "N",
-          "Value": 20.0
+          "Value": 20.0,
+          "Type": "Double"
         },
         {
           "Name": "Molecule",
-          "Value": "Sildenafil"
+          "Value": "Sildenafil",
+          "Type": "String"
         },
         {
           "Name": "Species",
-          "Value": "Human"
+          "Value": "Human",
+          "Type": "String"
         },
         {
           "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
+          "Value": "Peripheral Venous Blood",
+          "Type": "String"
         },
         {
           "Name": "Compartment",
-          "Value": "Plasma"
+          "Value": "Plasma",
+          "Type": "String"
         },
         {
           "Name": "Route",
-          "Value": "PO"
+          "Value": "PO",
+          "Type": "String"
         },
         {
           "Name": "Dose",
-          "Value": "50 mg"
+          "Value": "50 mg",
+          "Type": "String"
         },
         {
           "Name": "Times of Administration [h]",
-          "Value": 0.0
+          "Value": 0.0,
+          "Type": "Double"
         },
         {
           "Name": "Formulation",
-          "Value": "Tablet"
+          "Value": "Tablet",
+          "Type": "String"
         },
         {
           "Name": "Food state",
-          "Value": "Fasted"
+          "Value": "Fasted",
+          "Type": "String"
         },
         {
           "Name": "Comment",
-          "Value": "."
+          "Value": ".",
+          "Type": "String"
         }
       ],
       "Columns": [
@@ -17630,25 +17281,25 @@
     {
       "Name": "PI",
       "Classifiables": [
-        "IV 20mg",
-        "IV 25mg",
-        "IV 40mg",
         "IV 50mg",
-        "IV 80mg",
+        "IV 25mg",
         "Oral solution",
         "Tablet SD 100mg fasted",
         "Tablet SD 20mg fasted",
         "Tablet SD 25mg fasted",
-        "Tablet SD 50mg fasted"
+        "Tablet SD 50mg fasted",
+        "IV 20mg",
+        "IV 40mg",
+        "IV 80mg"
       ]
     },
     {
       "Name": "Test",
       "Classifiables": [
-        "Tablet MD 20/80mg fasted_Test",
         "Tablet MD 20mg fasted_Test",
-        "Tablet SD 100mg fasted_Test",
-        "Tablet SD 50mg fasted_Test"
+        "Tablet SD 50mg fasted_Test",
+        "Tablet MD 20/80mg fasted_Test",
+        "Tablet SD 100mg fasted_Test"
       ]
     }
   ]
