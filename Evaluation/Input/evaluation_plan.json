@@ -1,5 +1,5 @@
 {
-    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.3/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.7/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "Sildenafil",
